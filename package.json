@@ -1,0 +1,7 @@
+{
+    "name": "demo-deploy-project-to-ec2-by-cicd",
+    "version": "0.1",
+    "dependencies": {
+        "express": "4.17.1"
+    }
+}
