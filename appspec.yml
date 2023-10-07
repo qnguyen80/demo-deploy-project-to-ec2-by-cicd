@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/demo-deploy-project-to-ec2-by-cicd
-hook:
+hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
       timeout: 300
