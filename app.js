@@ -4,9 +4,6 @@ const port = 3000;
 
 
 const App = () => {
- 
-    const history = useNavigate();
-   
     return (
       <div>
         <div>
