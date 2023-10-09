@@ -4,7 +4,7 @@ const port = 3000;
 
 
 app.get('/', (req, res) => {
-    res.send("<h1>Demo deploy application to EC2 by CI/CD</h1><h4>Message: Success content</h4><p>Version: 0.1</p>");
+    res.send("<h1>Demo deploy application to EC2 by CI/CD</h1><h4>Message: Success</h4><p>Version: 0.1</p>");
 })
 
 app.get('/teams', (req, res) => {
