@@ -6,9 +6,9 @@ import Box from '@mui/material/Box';
 
 export default function Detection() {
     const [ip, setIP] = React.useState('');
-    const getData = async () => {
-        const res = await axios.get('https://geolocation-db.com/json/');
-        setIP(res.data.IPv4);
+    const getData = () => {
+        // const res = await axios.get('https://geolocation-db.com/json/');
+        setIP(window.location.hostname);
     }
 
     useEffect(() => {
@@ -16,7 +16,7 @@ export default function Detection() {
     }, []);
     return (
         <>
-            <h2>Your IPv4 Address is:</h2>
+            <h2>Public IPv4 DNS:</h2>
             {ip && (
                <h4>{ip}</h4>
             )}
