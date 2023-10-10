@@ -42,6 +42,8 @@ build/Release
 node_modules/
 jspm_packages/
 build/
+.DS_Store
+robots.txt
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
