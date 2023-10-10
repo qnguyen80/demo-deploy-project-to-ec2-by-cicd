@@ -5,8 +5,10 @@ export default function S3() {
     const imgKey = "image-background-demo.jpg";
     return (
         <>
-            <h4>Image data store in S3</h4>
-            <img src={s3Url+imgKey} />
+            <h2 className='title'>Image data stored in S3</h2>
+            <div className='tab-content'>
+                <img src={s3Url + imgKey} />
+            </div>
         </>
     );
 }
