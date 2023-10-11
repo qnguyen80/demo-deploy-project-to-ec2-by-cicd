@@ -9,9 +9,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import S3 from './pages/S3';
 import Introduction from './pages/Introduction';
 import Detection from './pages/Detection';
-
-// const s3Url = "https://aws-s3-image.s3.ap-southeast-2.amazonaws.com/";
-// const imgKey = "desktop-wallpaper-aws-amazon-web-services.jpg";
+import Team from './pages/Team';
 
 export default function App() {
   const [value, setValue] = React.useState('1');
@@ -33,18 +31,22 @@ export default function App() {
             <TabContext value={value}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <TabList onChange={handleChange} aria-label="lab API tabs example" centered>
-                  <Tab label="Introduction" value="1" />
-                  <Tab label="S3" value="2" />
-                  <Tab label="IP Detection" value="3" />
+                  <Tab label="Introduction" value="1"></Tab>
+                  <Tab label="Team" value="2" />
+                  <Tab label="S3" value="3" />
+                  <Tab label="IP Detection" value="4" />
                 </TabList>
               </Box>
+              <TabPanel value="2">
+                <Team></Team>
+              </TabPanel>
               <TabPanel value="1">
                 <Introduction></Introduction>
               </TabPanel>
-              <TabPanel value="2">
+              <TabPanel value="3">
                 <S3></S3>
               </TabPanel>
-              <TabPanel value="3">
+              <TabPanel value="4">
                 <Detection></Detection>
               </TabPanel>
             </TabContext>
