@@ -3,7 +3,7 @@
     min-height: 350px;
     margin: 100px 50px;
     background-image: linear-gradient(to top, rgb(59, 130, 246), rgb(37, 99, 235));
-    width: 500px;
+    width: 80%;
 
 }
 
@@ -29,7 +29,6 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 100px;
 }
 
 .aws {
@@ -40,7 +39,7 @@ li {
     min-height: 350px;
     margin: 100px 0px;
     width: 300px;
-    animation: breathing 3s ease-out infinite normal;
+    animation: breathing 1s ease-out infinite normal;
 }
 
 @-webkit-keyframes breathing {
@@ -101,4 +100,43 @@ li {
 
 .tab-content h4 {
     color: red;
+}
+
+.team-content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.team-box{
+    width: 150px;
+    height: 150px;
+    border: 8px solid #ff9901;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+}
+.team-box:hover{
+    cursor: pointer;
+    animation: breathing 3s ease-out infinite normal;
+}
+.team-box img{
+    width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+.team-box .name{
+    margin-top: 10px;
+}
+.line{
+    width: 100px;
+    border: 2px solid black;
+    height: 0;
+}
+.aws-txt{
+    color: #ff9901;
+    font-weight: bold;
+    font-style: italic;
 }
