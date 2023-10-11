@@ -1,34 +1,38 @@
-.box{
+.box {
     border-radius: 20px;
     min-height: 350px;
     margin: 100px 50px;
     background-image: linear-gradient(to top, rgb(59, 130, 246), rgb(37, 99, 235));
     width: 500px;
-    
+
 }
-.box:hover{
+
+.box:hover {
     box-shadow: 8px 8px #888888;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.box h3{
+.box h3 {
     text-align: center;
     padding-top: 10px;
     color: white;
 }
-li{
+
+li {
     color: white;
     text-align: left !important;
     margin-left: 20px;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0 100px;
 }
-.aws{
+
+.aws {
     background-image: url(../aws_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -36,13 +40,65 @@ li{
     min-height: 350px;
     margin: 100px 0px;
     width: 300px;
+    animation: breathing 3s ease-out infinite normal;
 }
-.title{
+
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.title {
     text-align: center;
 }
-.tab-content{
+
+.tab-content {
     text-align: center;
 }
-.tab-content h4{
+
+.tab-content h4 {
     color: red;
 }
