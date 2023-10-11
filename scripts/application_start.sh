@@ -17,6 +17,9 @@ npm install
 #build app
 npm run build
 
+#copy folder build to www
+cp -r /home/ec2-user/demo-deploy-project-to-ec2-by-cicd/build/* /var/www/html/react/
+
 #start our node app in the background
 # node /src/index.js > app.out.log 2> app.err.log < /dev/null & 
 # npm run build > app.out.log 2> app.err.log < /dev/null &

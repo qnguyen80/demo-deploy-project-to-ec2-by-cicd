@@ -7,9 +7,7 @@ import Box from '@mui/material/Box';
 export default function Detection() {
     const [ip, setIP] = React.useState('');
     const getData = () => {
-        // const res = await axios.get('https://geolocation-db.com/json/');
         setIP(window.location.hostname);
-        console.log('a');
     }
 
     useEffect(() => {
@@ -30,8 +28,6 @@ export default function Detection() {
                     </Box>
                 )}
             </div>
-
-
         </>
     );
 }
