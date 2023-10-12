@@ -1,6 +1,6 @@
 .box {
     border-radius: 20px;
-    min-height: 350px;
+    min-height: 400px;
     margin: 100px 50px;
     background-image: linear-gradient(to top, rgb(59, 130, 246), rgb(37, 99, 235));
     width: 80%;
@@ -17,6 +17,16 @@
     text-align: center;
     padding-top: 10px;
     color: white;
+}
+
+.diagram{
+    width: 100%;
+    text-align: center;
+}
+
+.diagram img{
+    width: 95%;
+    border-radius: 10px;
 }
 
 li {

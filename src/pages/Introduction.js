@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import './page.css';
+import diagram from "../diagram.png";
 
 export default function Introduction() {
     return (
@@ -8,7 +9,7 @@ export default function Introduction() {
             <div className='box'>
                 <h3>Diagram</h3>
                 <div className='diagram'>
-
+                    <img src={diagram} />
                 </div>
             </div>
             <div className='aws'></div>
