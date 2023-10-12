@@ -2,6 +2,7 @@ import * as React from 'react';
 import sang from "../SangDiep.jpeg";
 import quoc from "../QuocNguyen.png";
 import thang from "../ThangNguyen.jpeg";
+import snguyen from "../SangNguyen.png";
 
 export default function Team() {
     const s3Url = "https://aws-s3-image.s3.ap-southeast-2.amazonaws.com/";
@@ -39,7 +40,7 @@ export default function Team() {
                 <div className='line'></div>
                 <div className='team-box'>
                     <div>
-                        <img src={''} />
+                        <img src={snguyen} />
                     </div>
                     <div className='name'>
                         <h4>Sang Nguyen</h4>
