@@ -9,41 +9,37 @@ export default function Team() {
     const imgKey = "image-background-demo.jpg";
     return (
         <>
-            <h2 className='title'>Team Members</h2>
-            <div className='team-content'>
-                <div className='team-box'>
-                    <div>
-                    <img src={thang} />
-                    </div>
-                    <div className='name'>
-                        <h4>Thang Nguyen</h4>
+            <div className='content-team d-flex'>
+                <div className='content-left'>
+                    <h2>Meet Our Team</h2>
+                    <div className='team-desc'>
+                        <p><b>Team 4</b> is a group of people who have a diversified set of skills that are required to develop a complete software system. Team members apply their engineering and programming knowledge in software development achieving fantastic applications or websites. The efficiency and effectiveness of the developed software depend on the skills of the development team. Let us discuss the hierarchy of the software development team and understand their roles and responsibilities.</p>
                     </div>
                 </div>
-                <div className='line'></div>
-                <div className='team-box'>
-                    <div>
-                    <img src={quoc} />
+                <div className='content-right'>
+                    <div className='box-member'>
+                        <div className='avatar'>
+                            <img src={thang} />
+                        </div>
+                        <h5>Thang Nguyen</h5>
                     </div>
-                    <div className='name'>
-                        <h4>Quoc Nguyen</h4>
+                    <div className='box-member'>
+                        <div className='avatar'>
+                            <img src={quoc} />
+                        </div>
+                        <h5>Quoc Nguyen</h5>
                     </div>
-                </div>
-                <div className='line'></div>
-                <div className='team-box'>
-                    <div>
-                        <img src={sang} />
+                    <div className='box-member'>
+                        <div className='avatar'>
+                            <img src={sang} />
+                        </div>
+                        <h5>Sang Diep</h5>
                     </div>
-                    <div className='name'>
-                        <h4>Sang Diep</h4>
-                    </div>
-                </div>
-                <div className='line'></div>
-                <div className='team-box'>
-                    <div>
-                        <img src={snguyen} />
-                    </div>
-                    <div className='name'>
-                        <h4>Sang Nguyen</h4>
+                    <div className='box-member'>
+                        <div className='avatar'>
+                            <img src={snguyen} />
+                        </div>
+                        <h5>Sang Nguyen</h5>
                     </div>
                 </div>
             </div>
