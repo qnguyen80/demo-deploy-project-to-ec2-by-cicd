@@ -7,7 +7,7 @@ export default function Introduction() {
     return (
         <div className='content'>
             <div className='box'>
-                <h3>Diagram</h3>
+                <h3>Hello World!!!!</h3>
                 <div className='diagram'>
                     <img src={diagram} />
                 </div>
